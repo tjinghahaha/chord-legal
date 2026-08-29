@@ -28,8 +28,8 @@ Chord is a daily reflection and entertainment app. We aim to collect as little d
 <h2>1. Information We Collect</h2>
 <ul>
   <li><strong>Location data</strong> — Your approximate coordinates, used only to compute local environmental conditions (geomagnetic field, sunrise/sunset, nearby points of interest). Approximate location is not retained on our servers beyond 30 days.</li>
-  <li><strong>Birth information</strong> — Your date, time, and place of birth, provided voluntarily, used to personalize certain readings. Stored encrypted on your device, and—only if you enable cloud sync—stored end-to-end encrypted on our servers.</li>
-  <li><strong>Account information</strong> — If you choose to sign in, we store the account identifier provided by Sign in with Apple. Signing in is optional and is used only to sync your readings across your devices.</li>
+  <li><strong>Birth information</strong> — Your date, time, and place of birth, provided voluntarily, used to personalize certain readings. Stored in your device's secure storage (Apple Keychain / Android Keystore). Chord's servers never receive it. Clearing it in Settings removes it from every device where it appears.</li>
+  <li><strong>Account information</strong> — Your account identifier: from Sign in with Apple, or your email address if you sign in with email. Signing in is optional; it is used to save your readings to your account. Without it, readings are not saved.</li>
   <li><strong>Purchase data</strong> — Subscription status, processed by RevenueCat. We never receive or store your payment card details.</li>
 </ul>
 
@@ -45,10 +45,10 @@ Chord is a daily reflection and entertainment app. We aim to collect as little d
 <p>We do not sell your personal data. We do not use advertising identifiers. We do not show ads.</p>
 
 <h2>3. Data Storage &amp; Security</h2>
-<p>Personal data is stored locally on your device using encrypted storage. If you enable cloud sync,
-data is stored on Supabase infrastructure (United States / European Union). Sensitive birth information
-is end-to-end encrypted before transmission. Approximate location data is automatically deleted from our
-servers after 30 days.</p>
+<p>Your birth information is stored only in your device's secure storage and is never sent to our
+servers. While you are signed in, your readings and account record are stored on Supabase
+infrastructure (United States / European Union). Approximate location data is automatically deleted
+from our servers after 30 days.</p>
 
 <h2>4. Third-Party Services</h2>
 <p>Chord integrates with the following services:</p>
