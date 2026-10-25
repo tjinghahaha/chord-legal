@@ -20,16 +20,16 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Chord &middot; Last updated: October 12, 2026</p>
+<p class="meta">Chord &middot; Last updated: October 25, 2026</p>
 
 <p>This policy explains what information Chord collects, how it is used, and your rights.
 Chord is a daily reflection and entertainment app. We aim to collect as little data as possible.</p>
 
 <h2>1. Information We Collect</h2>
 <ul>
-  <li><strong>Location data</strong> — Your approximate coordinates, used only to compute local environmental conditions (geomagnetic field, sunrise/sunset, nearby points of interest). Approximate location is not retained on our servers beyond 30 days.</li>
-  <li><strong>Birth information</strong> — Your date, time, and place of birth, provided voluntarily, used to personalize certain readings. Stored in your device's secure storage (Apple Keychain / Android Keystore). Chord's servers never receive it. Clearing it in Settings removes it from every device where it appears.</li>
-  <li><strong>Account information</strong> — Your account identifier: from Sign in with Apple, or your email address if you sign in with email. Signing in is optional; it is used to save your readings to your account. Without it, readings are not saved.</li>
+  <li><strong>Location data</strong> — Your approximate coordinates (Chord never asks for precise location), used only to compute local conditions: sun times and solar time, the sky over you, your season, weather and air quality, and nearby sacred and historic sites. To find those sites, your approximate location is sent to Chord's server for that lookup; Chord does not save it, and readings saved to your account do not include it. Any location data stored on our servers is deleted after 30 days.</li>
+  <li><strong>Birth information</strong> — Your date, time, and place of birth, provided voluntarily, used to personalize certain readings. Stored in your device's secure storage (Apple Keychain / Android Keystore). Chord's servers never receive it, and readings saved to your account do not include it. When you search for your place of birth, the text you type is sent to Apple's location service to find matching places. Clearing it in Settings removes it from every device where it appears.</li>
+  <li><strong>Account information</strong> — Your account identifier: from Sign in with Apple; with Google Sign-In, the email address and name on your Google account; or your email address if you sign in with email. Signing in is optional; it is used to save your readings to your account. Without it, readings are not saved.</li>
   <li><strong>Purchase data</strong> — Subscription status, processed by RevenueCat. We never receive or store your payment card details.</li>
 </ul>
 
@@ -47,8 +47,8 @@ Chord is a daily reflection and entertainment app. We aim to collect as little d
 <h2>3. Data Storage &amp; Security</h2>
 <p>Your birth information is stored only in your device's secure storage and is never sent to our
 servers. While you are signed in, your readings and account record are stored on Supabase
-infrastructure (United States / European Union). Approximate location data is automatically deleted
-from our servers after 30 days.</p>
+infrastructure (United States / European Union). Chord does not save your location on our servers; any
+location data stored there is automatically deleted after 30 days.</p>
 
 <h2>4. Third-Party Services</h2>
 <p>Chord integrates with the following services:</p>
@@ -56,13 +56,15 @@ from our servers after 30 days.</p>
   <li><strong>Supabase</strong> — Cloud database &amp; account authentication</li>
   <li><strong>RevenueCat</strong> — Subscription management</li>
   <li><strong>Sign in with Apple</strong> — Optional account sign-in</li>
+  <li><strong>Google Sign-In</strong> — Optional account sign-in. Google shares your account&rsquo;s email address and name with Chord; covered by Google&rsquo;s privacy policy.</li>
   <li><strong>OpenWeatherMap</strong> — Weather &amp; air-quality data. Only your approximate location (rounded to about 1&nbsp;km) is sent; no name, account or device identifier. As with any web request, the provider can see your device&rsquo;s IP address.</li>
   <li><strong>NOAA (SWPC &amp; NCEI)</strong> — Geomagnetic data (no personal data sent)</li>
-  <li><strong>OpenStreetMap</strong> — Points-of-interest data (no personal data sent)</li>
+  <li><strong>Apple location services</strong> — Finding your place of birth when you search for it: the text you type is sent to Apple. Covered by Apple&rsquo;s privacy policy.</li>
+  <li><strong>OpenStreetMap</strong> — Map data for nearby sites, &copy; OpenStreetMap contributors (ODbL). Chord keeps its own copy of this data; nothing about you is sent to OpenStreetMap.</li>
   <li><strong>Sentry</strong> — Anonymous crash diagnostics (no personal data, no user identity)</li>
 </ul>
-<p>The weather, geomagnetic, and map data sources receive only a coarse location parameter to return
-local conditions; no account or identifying information is transmitted to them.</p>
+<p>Of these data sources, only OpenWeatherMap receives a location (approximate, rounded); NOAA and
+OpenStreetMap receive nothing about you. No account or identifying information is sent to any of them.</p>
 
 <h2>5. Your Rights</h2>
 <p>Depending on your region (including under GDPR and CCPA), you may have the right to:</p>
