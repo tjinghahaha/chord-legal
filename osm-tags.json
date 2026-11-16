@@ -1,0 +1,13 @@
+{
+ "_meta": "osm-station 篩選檔（filter spec v1）· Chord sacred_sites 用。值逐一取自線上 Edge Function fill-sacred-sites 的 TAG_MAPPING（2026-10-23 讀；21 條映射）。改這裡須同步改讀函數裏的 tag→SacredSiteType 映射（R2 設計件 §七.3·讀函數落地後由閘門比對）。不剔任何值：與舊 Overpass 查詢同口徑，未命名者照收（客戶端顯示 Unnamed site）。",
+ "keys": [],
+ "key_values": {
+  "historic": ["holy_well", "wayside_shrine", "archaeological_site", "ruins", "memorial", "monument", "statue", "castle", "fort", "city_gate"],
+  "amenity": ["place_of_worship"],
+  "building": ["cathedral", "church", "mosque", "temple", "shrine"],
+  "natural": ["peak", "volcano", "cave_entrance", "sacred"],
+  "waterway": ["waterfall"]
+ },
+ "drop_if_any": [],
+ "drop_if_all_micro": []
+}

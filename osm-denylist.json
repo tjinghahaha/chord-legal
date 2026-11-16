@@ -1,0 +1,5 @@
+{
+ "_meta": "osm-station 剔除名單 · Chord 不剔任何物（tags.json 已窄到只收 sacred_sites 映射的值）。",
+ "unless_named": true,
+ "deny": {}
+}
