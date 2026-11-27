@@ -96,7 +96,7 @@
     var t = match(prefs[i]);
     if (have.indexOf(t) < 0) continue;
     if (t === "en") return;
-    var en = document.querySelector('[lang="en"]'), el = document.querySelector('[lang="' + t + '"]');
+    var en = document.querySelector('.card[lang="en"]'), el = document.querySelector('.card[lang="' + t + '"]');
     en.hidden = true; el.hidden = false;
     document.documentElement.lang = t; document.title = el.getAttribute("data-title");
     return;
